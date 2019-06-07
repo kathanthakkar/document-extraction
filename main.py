@@ -40,23 +40,28 @@ def upload_file():
             flash('File(s) successfully uploaded')
             return redirect(url_for('process_input'))
 
-@app.route('/process')
+@app.route('/process', methods=['GET', 'POST'])
 def process_input():
     return render_template('process.html')
-    
+'''
 @app.route('/process', methods=['POST'])
 def process_file():
     global keyword
+    flash('Hello Admin')
+
     if request.method == 'POST':
       keyword = request.form['keyword']
+      return 'Hello Admin'
       flash('Keyword Submitted')
       return redirect(url_for('result_display'))
-  
-@app.route('/resultpage')
+'''
+@app.route('/result_display', methods = ['POST', 'GET'])
 def result_display():
     global keyword
-    return render_template('resultdisplay.html', key = keyword)
-
+    if request.method == 'POST':
+      result = request.form['keyword']
+      keyword = result
+      return render_template("resultdisplay.html",result = result)
 
 if __name__ == "__main__":
     app.run()
