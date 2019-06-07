@@ -8,8 +8,8 @@ Created on Tue Jun  4 11:32:34 2019
 from flask import Flask
 from flask_restplus import Api, Resource, fields
 
-UPLOAD_FOLDER = r'C:\Users\Dell\Desktop\intern\document-extraction\pdfs'
-
+UPLOAD_FOLDER = 'G:\Internship\Main\Flask App\document-extraction\pdfs'
+# Anshul's Path = G:\Internship\Main\Flask App\document-extraction\pdfs
 app = Flask(__name__)
 #api = Api(app)
 app.secret_key = "secret key"
