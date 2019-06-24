@@ -42,7 +42,8 @@ Rest of the installments are done by writing the following in Anaconda prompt--
 $pip install tesseract flask flask-restplus schedule pdftables_api flask_sqlalchemy PyPDF2 Wand
 
 pdftables_api provides with a free key for short duration and for that you need to generate the key from the provided link, further usage requires you to buy it.
-https://pdftables.com/pdf-to-excel-api
+pip install https://github.com/pdftables/python-pdftables-api/archive/master.tar.gz
+
 
 
 
