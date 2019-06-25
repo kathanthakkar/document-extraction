@@ -3,7 +3,7 @@
 This repo aims to create a web application/api which helps in extracting various information from scanned documents(mainly invoices) and present in a user-friendly manner.
 The available formats by this code include xlsx and Json.
 The code runs in Python Language making the use of :
-     Flask-Restplus for API 
+     Flask-Restplus for API, 
      SQLAlchemy and MySQL for Database Management System.
      
 The finished product : An API with 6 endpoints allowing uploading of file, adding and searching keywords along with other extra functions.
