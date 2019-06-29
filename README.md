@@ -37,7 +37,7 @@ Create a virtual environment :
 $conda create -n virtualenvironmentname
 
 Other installments:
-Rest of the installments are done by writing the following in Anaconda prompt--
+Rest of the installments are done by writing the following in Anaconda prompt-
 
 $ pip install tesseract flask flask-restplus schedule flask_sqlalchemy PyPDF2 Wand
 
